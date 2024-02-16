@@ -39,8 +39,7 @@ namespace GhostLyzer.Core.Exceptions
         /// Initializes a new instance of the <see cref="CustomException"/> class with a status code.
         /// </summary>
         /// <param name="statusCode">The status code that represents the error.</param>
-        public CustomException(HttpStatusCode statusCode) 
-                : base()
+        public CustomException(HttpStatusCode statusCode = HttpStatusCode.BadRequest) : base()
         {
             StatusCode = statusCode;
         }
