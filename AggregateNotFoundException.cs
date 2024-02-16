@@ -21,7 +21,7 @@
         /// <typeparam name="T">The type of the aggregate that was not found.</typeparam>
         /// <param name="id">The ID of the aggregate that was not found.</param>
         /// <returns>A new AggregateNotFoundException for the specified type and ID.</returns>
-        public AggregateNotFoundException For<T>(long id)
+        public static AggregateNotFoundException For<T>(long id)
         {
             return new AggregateNotFoundException(typeof(T).Name, id);
         }
